@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rich Text Editor</title>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="container my-3">
+    <h5>Notepad Editor</h5>
+   
+    <div class="card">
+      <div class="card-body">
+        <div class="options">
+          <!-- Text Format -->
+          <button id="bold" class="option-button format">
+            <i class="fa-solid fa-bold"></i>
+          </button>
+          <button id="italic" class="option-button format">
+            <i class="fa-solid fa-italic"></i>
+          </button>
+          <button id="underline" class="option-button format">
+            <i class="fa-solid fa-underline"></i>
+          </button>
+          <button id="copy" class="option-button format">
+            <i class="fa fa-copy"></i>
+          </button>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" id="addTxt" rows="3"></textarea>
+        </div>
+      </div>
+      <button class="btn btn-secondary" id="addBtn">Save</button>
+
+    </div>
+    <hr>
+    <h3>All Notes</h3>
+    <hr>
+    <div id="notes" class="row container-fluid"> </div>
+  </div>
+
+  <!--Script-->
+  <footer id="list"></footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
