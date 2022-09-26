@@ -2,7 +2,6 @@
 let btn = document.querySelector(".btn");
 let container = document.querySelector(".container");
 
-
 btn.addEventListener("click", ()=>{
   const div= document.createElement("div");
   div.innerHTML=`
